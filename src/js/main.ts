@@ -43,3 +43,12 @@ class TodoList { // klass för hantera todo-lista
         this.saveToLocalStorage(); // sparar tom lista
     }
 }
+
+const addForm = document.getElementById("new") as HTMLFormElement; // lyssnar efter tillägg i formulär
+addForm.addEventListener("submit"); // submittar då och anropar funktion för detta
+
+const addButton = document.getElementById("newtodobutton") as HTMLButtonElement; // lägg till todo
+addButton.addEventListener("click");
+
+const clearButton = document.getElementById("clearbutton") as HTMLButtonElement; // klick för rensning
+clearButton.addEventListener("click");
