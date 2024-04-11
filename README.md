@@ -1,5 +1,5 @@
 <div align="center">
-![Alt text](src/images/logo_jeja.svg)
+<img src="src/images/logo_jeja.svg">
 </div>
 <br>
 # Moment 2, DT208G.
