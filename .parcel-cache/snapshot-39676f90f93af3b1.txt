@@ -38,7 +38,7 @@
 99C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\@parcel\utils\src\getRootDir.js133573079640846161 0
 102C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\utility-types\dist\mapped-types.js133573079634263766 0
 65C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\.gitignore133573077265176336 0
-59C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\dist133573442098190321 1
+59C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\dist133573447328667252 1
 111C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\caniuse-lite\data\features\web-animation.js133573079668432407 0
 97C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\css-select\lib\index.d.ts.map133573079643449212 0
 107C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\caniuse-lite\data\features\autofocus.js133573079643159970 0
@@ -118,7 +118,7 @@
 97C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\posthtml-render\dist\index.js133573079631541035 0
 87C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\js-yaml\lib\type.js133573079641654003 0
 83C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\.bin\semver.ps1133573079670875880 0
-69C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\src\js\main.ts133573442097889977 0
+69C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\src\js\main.ts133573447328361829 0
 116C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\@swc\helpers\cjs\_initializer_warning_helper.cjs133573079643668612 0
 129C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\replace\Value.js133573079643668612 0
 97C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\@parcel\utils\src\throttle.js133573079647209441 0
@@ -676,7 +676,7 @@
 85C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\tslib\LICENSE.txt133573079638352830 0
 110C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\caniuse-lite\data\features\font-feature.js133573079659416512 0
 74C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\stable133573079633894741 1
-77C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\dist\index.90c5fab6.js133573442098140454 0
+77C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\dist\index.90c5fab6.js133573447328607405 0
 88C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\msgpackr-extract\bin133573079633316290 1
 125C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\csso\node_modules\css-tree\lib\syntax\atrule\font-face.js133573079654848721 0
 121C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\node_modules\css-select\node_modules\domutils\lib\esm\stringify.js133573079638442588 0
@@ -5979,4 +5979,4 @@
 70C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\dist\index.html133573432926453792 0
 82C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\dist\logo_jeja.bb22d6d4.svg133573432926483706 0
 82C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\dist\index.8c1c22dc.css.map133573432926543553 0
-81C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\dist\index.90c5fab6.js.map133573442098180348 0
+81C:\Users\jenif\Desktop\dt208g\moment2\jeja2306-moment2\dist\index.90c5fab6.js.map133573447328657279 0
