@@ -110,9 +110,8 @@ function renderTodos(): void { // återger todos
     
     if (content.length > 0) { // kontroll för innehåll
         const clearButton = document.createElement("button");
-        clearButton.textContent = "Rensa";
+        clearButton.textContent = "Rensa allt";
         clearButton.classList.add("btn");
-
 
         const headingElement = document.createElement("h1");
         headingElement.textContent = "Din lista";

@@ -24,16 +24,19 @@ section {
     padding: 0 0 3em 0;
     width: 700px;
     border-radius: 1em;
+    max-width: 100%;
 
     #new {
         @include centerall(flex, center, center, column);
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         background-color: $primary-color;
     }
 
     #task {
         width: 99.2%;
         font-size: 16px;
+        max-width: 100%;
         height: 70px;
         border-radius: 0.2em 0.2em 0 0;
         border: none;
@@ -51,7 +54,7 @@ section {
     }
 
     .btn {
-        margin: 4.5em 0 0 0;
+        margin: 4em 0 0 0;
         width: 180px;
         border-radius: 0.5em;
         height: 35px;
@@ -66,10 +69,17 @@ section {
     #result {
         @include centerall(flex, center, center, column);
         width: 500px;
+        max-width: 100%;
         background-color: $primary-color;
 
         .btn {
             margin: 3.5em 0 3em 0;
+        }
+
+        input {
+            width: 15px;
+            height: 15px;
+            margin: 0 20px 0 0;
         }
 
 
@@ -79,6 +89,7 @@ section {
             padding: 2em;
             font-size: 20px;
             border-bottom: 1px solid $darkest_color;
+        
 
             &:nth-child(even) {
                 background-color: $darkest_color;
@@ -87,22 +98,27 @@ section {
     } 
 }
 
-.prio-three::after {
-    content: "\1F534"; // röd
+.prio-one::after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/round-one.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: brightness(0) invert(1);
     position: absolute;
-    right: 450;
+    margin-left: 2px;
   }
-  .prio-one::after {
-    content: "\1F7E2"; // grön
-    position: absolute;
-    right: 450;
-    color: black;
-  }
-  .prio-two::after {
-    content: "\1F7E1"; // gul
-    position: absolute;
-    right: 450;
-  }
+
+.prio-two::after {
+    @extend .prio-one;
+    background-image: url('../images/round-two.svg');
+ }
+
+ .prio-three::after {
+    @extend .prio-one;
+    background-image: url('../images/round-three.svg');
+ }
 
 footer {
     @include centergap(flex, center, 1em);
@@ -115,4 +131,14 @@ footer {
     p { font-size: 12px; }
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+main { width: 100%; }
+.btn { border-radius: 0!important; width: 100%!important; }
+#new>input { border-radius: 0; }
+
+section { 
+    border-radius: 0; 
+    background-color: $primary-color; 
+    border-top: 1px solid $detailcolor;
+    border-bottom: 1px solid $detailcolor;}
+}
