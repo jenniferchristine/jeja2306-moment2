@@ -17,14 +17,12 @@ class TodoList { // klass för hantera todo-lista
         const newTodo: Todo = { task, completed: false, priority: priority as 1 | 2 | 3 };
         this.todos.push(newTodo); // pushar ny todo i listan
 
-        this.saveToLocalStorage(); // spara till localstorage
         return true;
     }
 
     markTodoCompleted(todoIndex: number): void { // markering för todo baserat på index
         if (todoIndex >= 0 && todoIndex < this.todos.length) { // kontroll
             this.todos[todoIndex].completed = true; // markera todo som klar
-            this.saveToLocalStorage();
         }
     }
 
@@ -40,7 +38,6 @@ class TodoList { // klass för hantera todo-lista
 
     clearTodos(): void { // rensa todos
         this.todos = [];
-        this.saveToLocalStorage(); // sparar tom lista
     }
 }
 

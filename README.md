@@ -1,13 +1,14 @@
-<div align="center" style="background-color: #518b99; padding: 5em 0 2.5em 0;">
+<div align="center" style="background-color: #518b99; padding: 2.5em;">
 <img src="src/images/logo_jeja.svg">
 <br>
 
-### Programmering i TypeScript
+### Jennifer Jakobsson
 </div>
 <br>
 
-# Moment 2, DT208G.
-JEJA 2306 | Jennifer Jakobsson
+# Programmering i TypeScript
+<span style="font-size: 20px;">Moment 2, DT208G</span>
+
 <br>
 <br>
 <br>
@@ -15,4 +16,4 @@ JEJA 2306 | Jennifer Jakobsson
 # Objektorienterad programmering
 
 >### Laboration i moment 2:
-> Testing testing
+> 
