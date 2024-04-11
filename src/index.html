@@ -15,26 +15,30 @@
     </header>
     <main>
         <section class="container">
-                <h1>Lägg till ny sak att göra</h1>
-
-                    <div id="new">
-                        <label for="newtodo">Att göra:</label><br>
-                        <input type="text" id="newtodo">&nbsp;
-                        <button class="btn" id="newtodobutton">Lägg till</button><br>
-                        <span id="message"></span>
-                    </div>
-
-                    <div id="result">
-                        <h1>Saker att göra</h1>
-                        <div id="todolist">
-
-                        </div>
-                        <button id="clearbutton" class="btn">Rensa</button>
-                    </div>
-
+            <h1>Lägg till ny sak att göra</h1>
+        
+            <div id="new">
+                <label for="task">Att göra:</label><br>
+                <input type="text" id="task">&nbsp;
+                <select id="priority">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <button class="btn" id="newtodobutton">Lägg till</button><br>
+                <span id="message"></span>
+            </div>
+        
+            <div id="result">
+                <h1>Saker att göra</h1>
+                <ul id="todo-list"></ul>
+                <button id="clearbutton" class="btn">Rensa</button>
+            </div>
         </section>
-
+        
     </main>
+    
     <footer>
         <img src="images/logo_jeja.svg" alt="logo for creater">
         <p>Copyright Jennifer Jakobsson, 2024<br>

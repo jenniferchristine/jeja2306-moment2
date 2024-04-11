@@ -40,4 +40,51 @@ footer {
     p { font-size: 12px; }
 }
 
+/* Uppdaterad CSS för att styla checkbox */
+
+.todo-item {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.todo-item label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.todo-item input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden; /* Gör checkboxen osynlig */
+}
+
+.todo-item label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.todo-item input[type="checkbox"]:checked + label::before {
+    content: '\2713'; /* Checkmark symbol */
+    font-size: 14px;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+    background-color: #007bff; /* Blue color for checked checkbox */
+}
+
+.todo-item.completed label::before {
+    background-color: #007bff;
+}
+
+
 @media only screen and (max-width: 600px) {}
