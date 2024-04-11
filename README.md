@@ -7,7 +7,7 @@
 <br>
 
 # Programmering i TypeScript
-<span style="font-size: 20px;">Moment 2, DT208G</span>
+### Moment 2, DT208G
 
 <br>
 <br>
