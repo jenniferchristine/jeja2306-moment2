@@ -1,4 +1,4 @@
-# Labbgrund till moment 2 i kursen DT208G, Programmering i TypeScript
+# Labbgrund: Moment 2, DT208G - Programmering i TypeScript
 <br>
 <h1 align="center">
   Jennifer Jakobsson | jeja2306
