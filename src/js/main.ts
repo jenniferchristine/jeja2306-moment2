@@ -65,7 +65,7 @@ function handleForm(event: Event): void { // hanterar submit för tillägg av to
         renderTodos();
         taskInput.value = ''; // återställ input
     } else {
-        alert("Vänligen välj prioritet");
+        alert("Fält behöver vara ifyllt och prioritering vald");
     }
 }
 
@@ -73,11 +73,26 @@ function renderTodos(): void { // återger todos
     const todoListContainer = document.getElementById("todo-list") as HTMLUListElement;
     todoListContainer.innerHTML = ''; // rensar befintliga todos
 
-    const todos = todoList.getTodos();
+    let todos = todoList.getTodos();
+    todos = todos.sort((a, b) => a.priority - b.priority); // sorterar prio iordning
 
     todos.forEach((todo, index) => {
         const todoItem = document.createElement("li");
         todoItem.textContent = todo.task;
+
+        switch (todo.priority) { // switch för klasser beroende på prio
+            case 1:
+                todoItem.classList.add("prio-one");
+                break;
+            case 2:
+                todoItem.classList.add("prio-two");
+                break;
+            case 3:
+                todoItem.classList.add("prio-three");
+                break;
+            default:
+                break;
+        }
 
         const checkbox = document.createElement("input");
         checkbox.type = "checkbox"; // input för checkbox
@@ -91,21 +106,27 @@ function renderTodos(): void { // återger todos
         todoListContainer.appendChild(todoItem);
     });
 
-        const content = document.getElementsByTagName("li"); // hämtar in li
-        
-        if (content.length > 0) { // kontroll för innehåll
-            const clearButton = document.createElement("button");
-            clearButton.textContent = "Rensa";
-            clearButton.classList.add("btn");
+    const content = document.getElementsByTagName("li"); // hämtar in li
+    
+    if (content.length > 0) { // kontroll för innehåll
+        const clearButton = document.createElement("button");
+        clearButton.textContent = "Rensa";
+        clearButton.classList.add("btn");
 
-            clearButton.addEventListener("click", () => { // rensar innehåll och knapp
-                todoList.clearTodos();
-                clearButton.remove();
-                renderTodos();
-            });
 
-            const resultDiv = document.getElementById("todo-list") as HTMLUListElement;
-            resultDiv.appendChild(clearButton); // ritar ut
-        }
+        const headingElement = document.createElement("h1");
+        headingElement.textContent = "Din lista";
+
+        clearButton.addEventListener("click", () => { // rensar innehåll och knapp
+            todoList.clearTodos();
+            clearButton.remove();
+            renderTodos();
+        });
+
+        const resultDiv = document.getElementById("todo-list") as HTMLUListElement;
+        resultDiv.appendChild(clearButton); // ritar ut
+        resultDiv.prepend(headingElement); // placeras högst upp i div
+    }
 }
+
 renderTodos();

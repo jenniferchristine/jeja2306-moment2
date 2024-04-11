@@ -31,16 +31,50 @@ section {
         background-color: $primary-color;
     }
 
+    #task {
+        width: 99.2%;
+        font-size: 16px;
+        height: 70px;
+        border-radius: 0.2em 0.2em 0 0;
+        border: none;
+    }
+
+    select {
+        width: 100%;
+        border-radius: 0;
+        border: 0;
+        background-color: $detailcolor;
+        height: 25px;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        color: grey;
+    }
+
+    .btn {
+        margin: 4.5em 0 0 0;
+        width: 180px;
+        border-radius: 0.5em;
+        height: 35px;
+        border: 0;
+        background-color: $light_color;
+        color: $darkest_color;
+        transition: 0.2s;
+        
+        &:hover { @include hover(0 12px 16px 0 rgba(2, 102, 196, 0.24), pointer, scale(1.01)); }
+    }
+
     #result {
         @include centerall(flex, center, center, column);
         width: 500px;
         background-color: $primary-color;
 
-        ul { list-style-type: none; padding: 0; width: 100%; }
+
+        ul { list-style-type: none; padding: 0; width: 100%; text-align: center;}
         li { 
             text-align: left; 
             padding: 2em;
             font-size: 20px;
+            border-bottom: 1px solid $darkest_color;
 
             &:nth-child(odd) {
                 background-color: $darkest_color;
