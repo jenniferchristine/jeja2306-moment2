@@ -58,3 +58,8 @@ $detailcolor: lighten($primary-color, 30%);
     align-items: $align;
     flex-direction: $flex;
 }
+
+@mixin border($border, $radius) {
+    border: $border;
+    border-radius: $radius;
+}
