@@ -10,34 +10,36 @@
 </head>
 
 <body>
-    <header id="mainheader">
-        <div class="contain">
-            <h1 id="logo">DT208G</h1>
-        </div>
+    <header>
+        <img src="images/logo_jeja.svg" alt="logo for creater">
     </header>
+    <main>
+        <section class="container">
+                <h1>Lägg till ny sak att göra</h1>
 
-    <div class="container">
-        <h2>Laboration 2 - Objektorienterad programmering</h2>
+                    <div id="new">
+                        <label for="newtodo">Att göra:</label><br>
+                        <input type="text" id="newtodo">&nbsp;
+                        <button class="btn" id="newtodobutton">Lägg till</button><br>
+                        <span id="message"></span>
+                    </div>
 
-        <h3>Lägg till ny sak att göra</h3>
+                    <div id="result">
+                        <h1>Saker att göra</h1>
+                        <div id="todolist">
 
-        <section id="new">
-            <label for="newtodo">Att göra:</label><br>
-            <input type="text" id="newtodo">&nbsp;
-            <button class="btn" id="newtodobutton">Lägg till</button><br>
-            <span id="message"></span>
+                        </div>
+                    </div>
+                    <button id="clearbutton" class="btn">Rensa</button>
+
         </section>
 
-        <h3>Saker att göra</h3>
-        <section id="todolist">
-
-        </section>
-
-        <button id="clearbutton" class="btn">Rensa</button>
-
-        <footer>
-            <p>Laborationsuppgift för kursen DT084G, Introduktion till programmering med JavaScript.</p>
-        </footer>
+    </main>
+    <footer>
+        <img src="images/logo_jeja.svg" alt="logo for creater">
+        <p>Copyright Jennifer Jakobsson, 2024<br>
+            dt208g Programmering i TypeScript</p>
+    </footer>
     </div>
 </body>
 
