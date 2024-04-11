@@ -47,15 +47,33 @@ class TodoList { // klass för hantera todo-lista
 const todoList = new TodoList(); // instans av todo-klassen
 
 const addForm = document.getElementById("new") as HTMLFormElement; // lyssnar efter tillägg i formulär
-addForm.addEventListener("submit"); // submittar då och anropar funktion för detta
+addForm.addEventListener("submit", handleForm); // submittar då och anropar funktion för detta
 
 const addButton = document.getElementById("newtodobutton") as HTMLButtonElement; // lägg till todo
-addButton.addEventListener("click");
+addButton.addEventListener("click", handleForm);
 
 const clearButton = document.getElementById("clearbutton") as HTMLButtonElement; // klick för rensning
 clearButton.addEventListener("click", () => {
     todoList.clearTodos(); // anropar funktion för att rensa todolist
+    renderTodos();
 });
+
+function handleForm(event: Event): void { // hanterar submit för tillägg av todo
+    event.preventDefault();
+
+    const taskInput = document.getElementById("task") as HTMLInputElement;
+    const priorityInput = document.getElementById("priority") as HTMLSelectElement;
+
+    const task = taskInput.value.trim(); // tar bort mellanslag i början
+    const priority = parseInt(priorityInput.value); // extraherar värde från inmatning för prio och konverterar till heltal och tilldelar prio-variabel
+
+    if (todoList.addTodo(task, priority)) {
+        renderTodos();
+        taskInput.value = ''; // återställ input
+    } else {
+        alert("Vänligen välj prioritet");
+    }
+}
 
 function renderTodos(): void { // återger todos
     const todoListContainer = document.getElementById("todo-list") as HTMLUListElement;

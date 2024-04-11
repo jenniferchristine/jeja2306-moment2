@@ -4,7 +4,7 @@
 $font-stack: 'Poppins';
 $paragraph-text: 'Inter';
 
-$primary-color: #464646;
+$primary-color: #509edf;
 $darker_color: darken($primary-color, 10%);
 $darkest_color: darken($primary-color, 14%);
 $light_color: lighten($primary-color, 100%);
@@ -50,4 +50,11 @@ $detailcolor: lighten($primary-color, 30%);
 @mixin dispcont($display, $justify) {
     display: $display;
     justify-content: $justify;
+}
+
+@mixin centerall($display, $justify, $align, $flex) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $flex;
 }
