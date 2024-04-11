@@ -13,6 +13,7 @@ class TodoList { // klass för hantera todo-lista
         if (task.trim() === '' || priority < 1 || priority > 3) { // kontroll
             return false; // false om inmatining är felaktig
         }
+        console.log(task, priority);
 
         const newTodo: Todo = { task, completed: false, priority: priority as 1 | 2 | 3 };
         this.todos.push(newTodo); // pushar ny todo i listan
@@ -67,6 +68,7 @@ function handleForm(event: Event): void { // hanterar submit för tillägg av to
     } else {
         alert("Fält behöver vara ifyllt och prioritering vald");
     }
+    console.log(todoList);
 }
 
 function renderTodos(): void { // återger todos
