@@ -52,12 +52,6 @@ addForm.addEventListener("submit", handleForm); // submittar då och anropar fun
 const addButton = document.getElementById("newtodobutton") as HTMLButtonElement; // lägg till todo
 addButton.addEventListener("click", handleForm);
 
-const clearButton = document.getElementById("clearbutton") as HTMLButtonElement; // klick för rensning
-clearButton.addEventListener("click", () => {
-    todoList.clearTodos(); // anropar funktion för att rensa todolist
-    renderTodos();
-});
-
 function handleForm(event: Event): void { // hanterar submit för tillägg av todo
     event.preventDefault();
 
@@ -96,6 +90,22 @@ function renderTodos(): void { // återger todos
         todoItem.prepend(checkbox); // placerar checkbox före allt annat
         todoListContainer.appendChild(todoItem);
     });
-}
 
-renderTodos(); // ladda in todos vid sidladdning
+        const content = document.getElementsByTagName("li"); // hämtar in li
+        
+        if (content.length > 0) { // kontroll för innehåll
+            const clearButton = document.createElement("button");
+            clearButton.textContent = "Rensa";
+            clearButton.classList.add("btn");
+
+            clearButton.addEventListener("click", () => { // rensar innehåll och knapp
+                todoList.clearTodos();
+                clearButton.remove();
+                renderTodos();
+            });
+
+            const resultDiv = document.getElementById("todo-list") as HTMLUListElement;
+            resultDiv.appendChild(clearButton); // ritar ut
+        }
+}
+renderTodos();
