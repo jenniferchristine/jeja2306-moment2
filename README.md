@@ -1,4 +1,4 @@
-<div align="center" style="background-color: #518b99; padding: 3.5em 0 2.5em 0;">
+<div align="center" style="background-color: #518b99; padding: 5em 0 2.5em 0;">
 <img src="src/images/logo_jeja.svg">
 <br>
 
