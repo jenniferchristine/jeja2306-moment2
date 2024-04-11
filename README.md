@@ -1,7 +1,9 @@
 <div align="center">
 <img src="src/images/logo_jeja.svg">
+Programmering i TypeScript
 </div>
 <br>
+
 # Moment 2, DT208G.
 <span style="text-decoration:none;">JEJA 2306 | Jennifer Jakobsson</span>
 <br>
