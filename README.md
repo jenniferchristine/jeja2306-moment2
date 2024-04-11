@@ -1,17 +1,18 @@
-<div align="center" style="background-color: #518b99; padding: 1em;">
+<div align="center" style="background-color: #518b99; padding: 2.5em;">
 <img src="src/images/logo_jeja.svg">
 <br>
-<br>
-Programmering i TypeScript
+
+### Programmering i TypeScript
 </div>
 <br>
 
 # Moment 2, DT208G.
-<span style="text-decoration:none;">JEJA 2306 | Jennifer Jakobsson</span>
+JEJA 2306 | Jennifer Jakobsson
 <br>
 <br>
 <br>
-<h1 align="center">Objektorienterad programmering</h1>
+
+# Objektorienterad programmering
 
 >### Laboration i moment 2:
 > Testing testing
