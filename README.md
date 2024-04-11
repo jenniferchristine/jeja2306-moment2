@@ -1,5 +1,6 @@
 <div align="center">
 <img src="src/images/logo_jeja.svg">
+<br>
 Programmering i TypeScript
 </div>
 <br>
