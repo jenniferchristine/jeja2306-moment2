@@ -21,14 +21,17 @@ header {
 section {
     @include centerall(flex, center, center, column);
     @include width(700px, 100%);
-    background-color: $darker_color;
+    background-color: $lighter_color;
     padding: 0 0 3em 0;
     border-radius: 1em;
+    border: 1px solid $detailcolor;
 
     #new {
         @include width(100%, 500px);
         @include centerall(flex, center, center, column);
-        background-color: $primary-color;
+        background-color: lighten($primary-color, 20%);
+        border-right: 1px solid darken($detailcolor, 10%);
+        border-left: 1px solid darken($detailcolor, 10%);
     }
 
     #task {
@@ -39,12 +42,12 @@ section {
     }
 
     select {
-        @include color($detailcolor, grey);
+        @include color(rgb(212, 212, 212), rgb(94, 94, 94));
         @include border(0, 0);
         @include size(100%, 25px);
         font-size: 12px;
         letter-spacing: 0.3px;
-        box-shadow: 0px 4px 8px $darker_color;
+        border-bottom:  1px solid darken($detailcolor, 10%);
     }
 
     .btn {
@@ -60,7 +63,10 @@ section {
     #result {
         @include centerall(flex, center, center, column);
         @include width(500px, 100%);
-        background-color: $primary-color;
+        background-color: lighten($primary-color, 20%);
+        border-right:  1px solid darken($detailcolor, 10%);
+        border-left:  1px solid darken($detailcolor, 10%);
+        border-bottom:  1px solid darken($detailcolor, 10%);
 
         .btn { margin: 3.5em 0 3em 0; }
         input { @include size(16px, 16px); margin: 0 20px 0 0; }
@@ -70,10 +76,9 @@ section {
             text-align: left; 
             padding: 2em;
             font-size: 20px;
-            border-bottom: 1px solid $darkest_color;
-            box-shadow: 0px 4px 8px $darker_color;
+            border-bottom: 1px solid darken($lighter_color, 3%);
         
-            &:nth-child(even) { background-color: $darkest_color; } }
+            &:nth-child(even) { background-color:  $lighter_color; } }
     } 
 
     .prio-one::after {
